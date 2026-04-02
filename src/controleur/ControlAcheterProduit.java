@@ -1,5 +1,6 @@
 package controleur;
 
+import villagegaulois.Etal;
 import villagegaulois.Village;
 
 public class ControlAcheterProduit {
@@ -14,6 +15,14 @@ public class ControlAcheterProduit {
 		this.controlVerifierIdentite = controlVerifierIdentite;
 		this.controlTrouverEtalVendeur = controlTrouverEtalVendeur;
 	}
-
-	//TODO a completer
+	public Etal acheterProduit(String nom) {
+		boolean identite = controlVerifierIdentite.verifierIdentite(nom);
+		if (identite) {
+			return controlTrouverEtalVendeur.trouverEtalVendeur(nom);
+			
+		}
+		return null;
+		
+	}
+	
 }

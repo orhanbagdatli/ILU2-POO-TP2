@@ -20,6 +20,9 @@ public class Etal {
 	public int getQuantite() {
 		return quantite;
 	}
+	public int getQuantiteDebutMarche() {
+		return quantiteDebutMarche;
+	}
 
 	public String getProduit() {
 		return produit;
