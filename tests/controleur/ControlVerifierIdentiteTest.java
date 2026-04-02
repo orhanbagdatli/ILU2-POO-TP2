@@ -27,7 +27,9 @@ class ControlVerifierIdentiteTest {
 	void testVerifierIdentite() {
 		cm.ajouterGaulois("Bonemine", 1);
 		cm.ajouterGaulois("Obelix", 1);
-		assertTrue()
+		assertTrue(cv.verifierIdentite("Bonemine"));
+		assertFalse(cv.verifierIdentite("blabla"));
+		assertTrue(cv.verifierIdentite("Obelix"));
 	}
 
 }
